@@ -1,0 +1,26 @@
+var letters = document.getElementById("letters").value;
+            // alert(letters);
+            var url = "api/people.php?letters=" + letters;
+            // генерируем переменную, которая выполнит запрос
+            var xhr = new XMLHttpRequest();
+            // // конфигурируем объект, запрашивает сервис по методу GET запрашиваем адрес URL
+            xhr.open("GET", url);
+            // // ответ с сервера, определяем что делаем когда с сервера придет отклик
+            xhr.onload = function() {
+                var text = xhr.responseText;
+            //     // определяем формат ответа - текст
+                alert(text);
+            //     //десериализация JSON, передаем текст json в формате текста
+            //     var people = JSON.parse(text);
+            //     alert(people);
+            //     // for (var i=0; i < people.lenght; i++) {
+            //     //     var person = people[i];
+            //     //     // alert(person);
+            //     //     var firstName = person["firstName"];
+            //     //     var lastName = person["lastName"];
+            //     //     alert(lastName);
+            //         }
+            //     // запрос ответа с сервера - ответ в формате JSON
+            };   
+            xhr.send();
+        
