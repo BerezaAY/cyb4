@@ -54,14 +54,15 @@ CREATE TABLE `users` (
   `ID` int(11) NOT NULL,
   `Login` varchar(20) NOT NULL,
   `PwdHash` varchar(1000) NOT NULL,
-  `Email` varchar(50) NOT NULL
+  `Email` varchar(50) NOT NULL,
+  'UserName' varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`ID`, `Login`, `PwdHash`, `Email`) VALUES
+INSERT INTO `users` (`ID`, `Login`, `PwdHash`, `Email`, 'UserName') VALUES
 (1, 'user1', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'zagida81@gmail.com'),
 (2, 'user2', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'adsfa@gmail.com');
 
