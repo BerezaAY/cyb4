@@ -29,13 +29,6 @@
             </div>
             <button type="submit" name="register" value="register">Зарегистрироваться</button>    
         </form>
-
-
-		<!-- <form method="POST" action="check_login.php">
-			<input type="text" name="txtUser"/> <br />
-			<input type="password" name="txtPwd"/> <br />
-			<button>Вперед</button> <br/>
-		</form> -->
         <p style="text-align: right;"><b>Автор:</b> Алексей Береза</p>
 	</body>
 
