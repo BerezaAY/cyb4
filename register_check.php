@@ -22,4 +22,4 @@ mysqli_close($conn);
 echo "Вы успешно зарегестрированны";
 ?>
 <br>
-<a href="/cyb4/register.php">Вернуться назад</a>
+
